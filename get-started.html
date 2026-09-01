@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Grow&Sell | Get Started</title>
+    <link rel="stylesheet" href="get-started.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="topbar">
+        <a class="brand" href="index.html"
+          ><span class="leaf">❧</span
+          ><span
+            ><strong>Grow&Sell</strong
+            ><small>Grow Better. Sell Smarter.</small></span
+          ></a
+        >
+        <nav>
+          <button id="helpBtn">ⓘ Help</button><i></i
+          ><span
+            >Already have an account? <a href="signin.html">Sign In</a></span
+          >
+        </nav>
+      </header>
+      <section class="intro">
+        <div class="line">──── ❋ ────</div>
+        <h1>Let’s <em>Get You Started!</em></h1>
+        <p>
+          Join Grow&Sell and be a part of a smarter agricultural ecosystem.<br />Choose
+          your role to continue.
+        </p>
+      </section>
+      <section class="roles">
+        <article class="card">
+          <div class="photo farmer"></div>
+          <div class="content">
+            <div class="icon">♙</div>
+            <h2>I am a Farmer</h2>
+            <div class="sprout">──── ❋ ────</div>
+            <ul>
+              <li>● Get crop recommendations</li>
+              <li>● Compare market prices</li>
+              <li>● Find verified buyers</li>
+              <li>● Sell smarter, earn better</li>
+            </ul>
+            <button
+              class="continue farmerBtn"
+              data-role="farmer"
+              onclick="window.location.href = 'signin.html'"
+            >
+              Continue as Farmer <b>→</b>
+            </button>
+          </div>
+        </article>
+        <article class="card">
+          <div class="content">
+            <div class="icon">🛒</div>
+            <h2>I am a Buyer</h2>
+            <div class="sprout gold">──── ❋ ────</div>
+            <ul class="buyerlist">
+              <li>● Discover quality produce</li>
+              <li>● Connect with trusted farmers</li>
+              <li>● Compare offers & prices</li>
+              <li>● Build long-term partnerships</li>
+            </ul>
+            <button class="continue buyerBtn" data-role="buyer">
+              Continue as Buyer <b>→</b>
+            </button>
+          </div>
+          <div class="photo buyer"></div>
+        </article>
+      </section>
+      <section class="benefits">
+        <div>
+          <span>♢</span>
+          <p>
+            <b>Verified & Trusted</b
+            ><small>All users are verified for<br />a safe experience.</small>
+          </p>
+        </div>
+        <div>
+          <span>❧</span>
+          <p>
+            <b>Better Prices</b
+            ><small
+              >Get the best market prices<br />and real-time updates.</small
+            >
+          </p>
+        </div>
+        <div>
+          <span>🤝</span>
+          <p>
+            <b>Secure Transactions</b
+            ><small>Safe payments and secure<br />dealings for everyone.</small>
+          </p>
+        </div>
+        <div>
+          <span>🎧</span>
+          <p>
+            <b>24/7 Support</b
+            ><small>We're here to help you<br />anytime, anywhere.</small>
+          </p>
+        </div>
+      </section>
+    </main>
+    <div class="modal" id="modal">
+      <div class="modalBox">
+        <button id="close">×</button>
+        <div id="mIcon">🌱</div>
+        <h2 id="mTitle"></h2>
+        <p id="mText"></p>
+        <button id="mAction">Create Account →</button>
+      </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="get-started.js"></script>
+  </body>
+</html>

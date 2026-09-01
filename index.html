@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gro&Sell — Grow Smarter, Sell Better</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="brand" href="#home">Grow&Sell</a>
+      <div class="nav-links">
+        <a href="#home">Home</a><a href="#how">How It Works</a
+        ><a href="#marketplace">Marketplace</a><a href="#about">About</a>
+      </div>
+      <div class="nav-actions">
+        <button
+          class="link-btn"
+          id="signInBtn"
+          onclick="window.location.href = 'signin.html'"
+        >
+          Sign In</button
+        ><button
+          class="nav-cta"
+          id="getStartedBtn"
+          onclick="window.location.href = 'get-started.html'"
+        >
+          Get Started
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1>GROW SMARTER.<br />SELL BETTER.</h1>
+          <p>
+            Get crop recommendations, market prices and selling options in one
+            place.
+          </p>
+          <button class="dark-btn" id="heroStart">
+            Get Started Now <span>→</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="how" class="section how-section">
+        <h2>How Grow&Sell works</h2>
+        <div class="process">
+          <article class="step">
+            <div class="step-no">STEP 1</div>
+            <div class="step-icon">🌾</div>
+            <h3>ENTER FARM DETAILS</h3>
+            <p>Tell us about your crop and farm.</p>
+            <button class="mini-btn step-action" data-action="profile">
+              FARM PROFILE
+            </button>
+          </article>
+          <div class="connector">→</div>
+          <article class="step">
+            <div class="step-no">STEP 2</div>
+            <div class="step-icon">📊</div>
+            <h3>COMPARE MARKET OPTIONS</h3>
+            <p>See prices and nearby markets.</p>
+            <button class="mini-btn step-action" data-action="market">
+              MARKET ANALYSIS
+            </button>
+          </article>
+          <div class="connector">→</div>
+          <article class="step">
+            <div class="step-no">STEP 3</div>
+            <div class="step-icon">🎯</div>
+            <h3>GET BEST DECISION</h3>
+            <p>Choose what gives you more value.</p>
+            <button class="mini-btn step-action" data-action="recommendation">
+              SMART RECOMMENDATION
+            </button>
+          </article>
+          <aside class="decision">
+            <p>What do we consider before recommending?</p>
+            <div class="venn">
+              <span>Market<br />Price</span><span>Demand</span
+              ><span>Distance</span><b>Best<br />Decision</b>
+            </div>
+            <small>Highest price ≠ highest profit</small>
+          </aside>
+        </div>
+        <button class="dark-btn centered" id="decisionBtn">
+          Start Making Better Decisions →
+        </button>
+      </section>
+
+      <section id="marketplace" class="section compare-section">
+        <div class="section-heading">
+          <h2>COMPARE BEFORE YOU SELL</h2>
+          <p>The highest mandi price isn't always the best deal.</p>
+        </div>
+        <div class="compare-grid">
+          <div class="markets-card">
+            <h3>NEARBY MARKETS</h3>
+            <div class="recommended-market">
+              <label>⭐ RECOMMENDED</label>
+              <div class="market-title">
+                <h4>Mandi B</h4>
+                <strong>₹2,400 <small>/ quintal</small></strong>
+              </div>
+              <div class="market-meta">
+                <span>📍 8 KM</span><span>🚚 ₹3000</span
+                ><span>📈 High Demand</span>
+              </div>
+              <hr />
+              <small>EXPECTED RETURN</small><b class="return">₹2,37,000</b>
+              <button class="outline-btn why-btn">
+                Why this mandi <span>→</span>
+              </button>
+            </div>
+            <button class="market-option" data-mandi="Mandi A">
+              Mandi A <span>20 km　›</span>
+            </button>
+            <button class="market-option" data-mandi="Mandi C">
+              Mandi C <span>5 km　›</span>
+            </button>
+          </div>
+          <div class="map-card">
+            <div class="map-bg">
+              <div class="river"></div>
+              <div class="road r1"></div>
+              <div class="road r2"></div>
+              <i class="tree t1">♣</i><i class="tree t2">♣</i
+              ><i class="tree t3">♣</i>
+            </div>
+            <div class="route"></div>
+            <div class="pin farm-pin">⌂</div>
+            <div class="label farm-label">Your Farm</div>
+            <div class="pin mandi-b">●</div>
+            <div class="label b-label"><b>Mandi B</b><br />8 km</div>
+            <div class="red-pin mandi-a">●</div>
+            <div class="label a-label"><b>Mandi A</b><br />20 km</div>
+            <div class="red-pin mandi-c">●</div>
+            <div class="label c-label"><b>Mandi C</b><br />5 km</div>
+            <div class="map-legend">
+              <p><i class="farm-dot"></i>Your Farm</p>
+              <p><i class="best-dot"></i>Recommended Mandi</p>
+              <p><i class="red-dot"></i>Other Mandi</p>
+              <p>┄┄ Suggested Route</p>
+            </div>
+            <button class="north">N ▲</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section smart-section" id="about">
+        <div class="buyer-layout">
+          <div class="buyer-visual">
+            <div class="farmer-art">👨🏽‍🌾<span>📱</span></div>
+            <div class="verified-badge">
+              <b>✓ 120+</b><span>Verified Buyers</span><small>● ● ●　+</small>
+            </div>
+            <div class="buyer-panel">
+              <div class="panel-head">
+                <div>
+                  <b>⌕ &nbsp;Find buyers near you</b
+                  ><small>Based on your crop and location</small>
+                </div>
+                <button id="cropSelect">🌿 Wheat⌄</button>
+              </div>
+              <div class="best-buyer">
+                <label>⭐ BEST MATCH</label>
+                <div class="buyer-name">
+                  <i>▦</i>
+                  <div>
+                    <b>Sharma Grain Traders <em>✓</em></b
+                    ><small>Verified Buyer</small>
+                  </div>
+                  <strong>4.8 ⭐<small>Rating</small></strong>
+                </div>
+                <div class="buyer-stats">
+                  <span><b>₹2,450</b>Offer Price<br />/ quintal</span
+                  ><span><b>500 qtl</b>Quantity<br />Needed</span
+                  ><span><b>6 km</b>Away</span>
+                </div>
+                <p>
+                  ♧　Why recommended?<br /><b
+                    >　　Best offer • Nearby • Verified</b
+                  >
+                </p>
+              </div>
+              <h5>OTHER BUYERS</h5>
+              <button class="buyer-row" data-buyer="GreenField Foods">
+                <i>▦</i
+                ><span
+                  ><b>GreenField Foods <em>✓</em></b
+                  ><small>Verified • 10 km away</small></span
+                ><strong>₹2,420<small>/qtl</small></strong
+                >→
+              </button>
+              <button class="buyer-row" data-buyer="Agarwal Agro">
+                <i>▦</i
+                ><span
+                  ><b>Agarwal Agro <em>✓</em></b
+                  ><small>Verified • 12 km away</small></span
+                ><strong>₹2,380<small>/qtl</small></strong
+                >→
+              </button>
+            </div>
+          </div>
+          <div class="buyer-copy">
+            <div class="eyebrow">—　🌿 FIND VERIFIED BUYERS　—</div>
+            <h2>SELL SMARTER.<br /><span>EARN BETTER.</span></h2>
+            <p class="lead">
+              Find verified buyers actively looking for your crop. Compare
+              offers, choose the right buyer, and sell without the hassle of
+              searching.
+            </p>
+            <div class="feature">
+              <i>✓</i>
+              <div>
+                <h3>Verified Buyers</h3>
+                <p>Trade with trusted and verified businesses.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <i>₹</i>
+              <div>
+                <h3>Better Offers</h3>
+                <p>Compare offers and choose what works best.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <i>ϟ</i>
+              <div>
+                <h3>No More Searching</h3>
+                <p>Find interested buyers in one place.</p>
+              </div>
+            </div>
+            <div class="buyer-actions">
+              <button class="dark-btn" id="findBuyersBtn">Find Buyers　→</button
+              ><button class="text-btn" id="howWorksBtn">
+                How it works　→
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="trust-stats">
+          <div>
+            ♟
+            <p><b>500+</b><span>Verified Buyers</span></p>
+          </div>
+          <div>
+            ♣
+            <p><b>20+</b><span>Crops Supported</span></p>
+          </div>
+          <div>
+            ♢
+            <p><b>100%</b><span>Safe & Secure</span></p>
+          </div>
+          <div>
+            🤝
+            <p><b>10K+</b><span>Successful Transactions</span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="modal">
+      <div class="modal-box">
+        <button class="close" id="closeModal">×</button>
+        <h2 id="modalTitle">Welcome</h2>
+        <p id="modalText"></p>
+        <div id="modalExtra"></div>
+      </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
